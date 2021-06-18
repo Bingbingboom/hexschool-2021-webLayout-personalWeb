@@ -1,0 +1,109 @@
+// 字體大小
+.h1{
+    font-size: 80px;
+}
+.h2{
+    font-size: 64px;
+}
+.h3{
+    font-size: 24px;
+}
+.h4{
+    font-size: 20px;
+}
+
+// height
+.h-100{
+    height: 100%;
+}
+
+// line height
+.lh-normal{
+    line-height: 1.5;
+}
+
+// 字體粗細
+.fw-light{
+    font-weight: lighter;
+}
+.fw-bold{
+    font-weight: 700;
+}
+.fw-black{
+    font-weight: 900;
+}
+
+// 字體顏色
+.text-white{
+    color: #FFF;
+}
+
+// 背景
+.bg-dark{
+    background-color: $dark;
+}
+.bg-cover{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+// 字體對齊
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+
+// display
+.d-inline-block{
+    display: inline-block;
+}
+.d-flex{
+    display: flex;
+} 
+
+
+// Flex
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-column{
+    flex-direction: column;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+
+// margin, padding
+.mb-xs{
+    margin-bottom: 4px;
+}
+.mb-s{
+    margin-bottom: 12px;
+}
+.mb-m{
+    margin-bottom: 28px;
+}
+.mb-l{
+    margin-bottom: 68px;
+}
+
+@for $i from 1 to 10 {   // 1 ~ 9 (?)
+    .mb-#{$i}{
+        margin-bottom: $spacing * $i;
+    }
+}
+
+@for $i from 1 to 9 {   
+    .pb-#{$i}{
+        padding-bottom: $spacing * $i;
+    }
+}
